@@ -6,11 +6,12 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+    &__menu-button
+      display: none
   &__search
     margin-right: auto
     margin-left: 108px
-  &__menu-button
-    display: none
+
   &-bottom
     background: $dark
   &-menu
@@ -26,34 +27,32 @@
       font-size: 14px
       line-height: 18px
       text-transform: uppercase
-  .logo
-    width: 177px
-  .search
-    display: flex
-    position: relative
-    border-radius: 6px
-    overflow: hidden
-    height: 40px
-
-    &__input
-      width: 350px
-      height: 100%
-      padding-left: 23px
-      padding-right: 75px
-      background-color: #F5FAFE
-      border: none
-      color: $text-color
-
-    &__button
-      position: absolute
-      background-color: $primary
-      width: 65px
-      height: 100%
-      top: 0px
-      right: 0px
-      font-size: 12px
-      line-height: 15px
-      border: none
+.logo
+  width: 177px
+.search
+  display: flex
+  position: relative
+  border-radius: 6px
+  overflow: hidden
+  height: 40px
+  &__input
+    width: 350px
+    height: 100%
+    padding-left: 23px
+    padding-right: 75px
+    background-color: #F5FAFE
+    border: none
+    color: $text-color
+  &__button
+    position: absolute
+    background-color: $primary
+    width: 65px
+    height: 100%
+    top: 0px
+    right: 0px
+    font-size: 12px
+    line-height: 15px
+    border: none
 .user
   display: flex
   align-items: center
