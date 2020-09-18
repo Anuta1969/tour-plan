@@ -42,8 +42,42 @@
       border: none
       background-color: #fff
       cursor: pointer
-
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
+
+@media (max-width: 576px )
+  .logo
+    width: 99px
+  .navbar
+    &-menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__item
+        margin-bottom: 20px
+    &-bottom
+      display: flex
+      flex-direction: column
+      padding-top: 31px
+      padding-bottom: 48px
+      &__mobile
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-decoration: none
+        margin-bottom: 27px
+        &__user-name
+          margin: 0
+          color: $light
+      &__search
+        display: flex
+        width: 243px
+        &__user-name
+          color: $light
+    .search
+      &__input
+        font-size: 12px
+    .user__avatar
+      padding-bottom: 10px

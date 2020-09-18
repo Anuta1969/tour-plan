@@ -11,9 +11,12 @@
   &__search
     margin-right: auto
     margin-left: 108px
-
   &-bottom
     background: $dark
+    &__mobile
+      display: none
+    &__search
+      display: none
   &-menu
     list-style-type: none
     margin: 0
@@ -27,14 +30,17 @@
       font-size: 14px
       line-height: 18px
       text-transform: uppercase
+
 .logo
   width: 177px
-.search
-  display: flex
+.search, .navbar__search
+
   position: relative
   border-radius: 6px
   overflow: hidden
   height: 40px
+  .navbar__search
+    display: flex
   &__input
     width: 350px
     height: 100%
