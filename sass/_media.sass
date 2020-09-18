@@ -73,11 +73,24 @@
           color: $light
       &__search
         display: flex
+        position: relative
+        border-radius: 6px
+        overflow: hidden
+        height: 40px
         width: 243px
-        &__user-name
-          color: $light
-    .search
-      &__input
-        font-size: 12px
-    .user__avatar
-      padding-bottom: 10px
+        margin: auto
+        &__input
+          font-size: 12px
+          width: 100%
+          padding-left: 8px
+
+        &__button
+          background-color: $primary
+          position: absolute
+          height: 100%
+          top: 0px
+          right: 0px
+          font-size: 12px
+          line-height: 15px
+          border: none
+          width: 65px
