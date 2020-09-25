@@ -7,13 +7,13 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin-top: 0px
     margin-bottom: 70px
   &-slider
     &__item
       display: flex
       flex-direction: column
       border-radius: 4px
-      align-items: center
       background-color: #fff
       max-width: 730px
       margin: 45px auto 0
@@ -39,7 +39,7 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 42%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -49,27 +49,23 @@
       background-color: transparent
       cursor: pointer
       z-index: 99
-
       &--prev
         background-image: url(../img/arrow-prev-secondary.svg)
-        left: 0
+        left: 16px
       &--next
         background-image: url(../img/arrow-next-secondary.svg)
-        right: 0
+        right: 16px
     &__profile
       display: flex
       flex-direction: column
       align-items: center
       margin-top: -45px
       margin-bottom: 32px
-
     &__image
       border-radius: 50%
-      margin-bottom: 9px
       object-fit: cover
       width: 90px
       height: 90px
-
     &__username
       font-weight: bold
       font-size: 12px
@@ -80,7 +76,7 @@
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 5px
+      margin-bottom: -2px
     &__text
       max-width: 537px
       ont-weight: normal
