@@ -7,8 +7,9 @@
       min-height: 100%
       object-fit: cover
       width: 100%
-  .hotel-slider
-    width: 590px
+  .hotel
+    &-slider
+
   .card
     width: 230px
     height: 230px
@@ -33,7 +34,9 @@
   .search
     &__input
       width: 340px
+      padding-left: 23px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &-details
@@ -42,21 +45,30 @@
       margin-bottom: 30px
     &-slider
       width: 100%
+
   .booking
     width: 340px
   .maps
     width: 340px
   .reviews
+
+    &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
   .activities
+    padding-top: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
   .card
     width: 339px
+    height: 255px
 
 @media (max-width: 767px)
   .container
@@ -92,9 +104,11 @@
     flex-basis: auto
   .hotel
     padding-top: 2px
+    padding-bottom: 40px
     &-name
       flex-basis: 100%
     &-info
+      padding-bottom: 39px
       &__text
         width: 100%
       &__offer
@@ -113,7 +127,7 @@
         margin-left: 0
     &-details
       flex-direction: column
-      min-height: 450px
+      min-height: 400px
     &-slider
       height: 179px
   .booking
@@ -139,12 +153,20 @@
         line-height: 38px
 
   .reviews
+    padding-bottom: 0px
+    margin-bottom: 20px
     &__title
       font-weight: bold
       font-size: 18px
       line-height: 23px
-      text-align: center
+      margin: 0 auto
       text-transform: uppercase
+      width: 245px
+      margin-bottom: 40px
+    &__text
+      font-size: 12px
+      line-height: 160%
+      padding: 2px
 
     &-slider
       &__item
@@ -161,11 +183,18 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -85px
+      &__profile
+        margin-bottom: 27px
   .card
-    width: 47%
+    width: 280px
+    height: 255px
   .activities
-    padding-top: 40px
-    padding-bottom: 60px
+    padding-top: 0px
+    padding-bottom: 25px
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
 
 @media (max-width: 576px )
   .logo

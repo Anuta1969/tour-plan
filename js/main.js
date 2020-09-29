@@ -27,4 +27,11 @@ var reviewSlider = new Swiper('.reviews-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-})
+});
+
+$('.newsletter').parallax({
+  imageSrc: './img/newsletter-bg.jpeg',
+  speed: 0.2
+
+
+});
