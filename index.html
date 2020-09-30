@@ -24,19 +24,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo-image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/user-avatar.jpeg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -63,6 +63,21 @@
           </button>
         </form>
         <ul class="navbar-menu">
+
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href=" #" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/user-avatar.jpeg" alt="avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location" />
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="" class="navbar-menu__link
           ">All Deals</a>
@@ -211,7 +226,7 @@
     </div>
     <!-- /.container -->
   </section>
-  <section class="newsletter data-parallax=" scroll" data-image-src="./img/newsletter-bg.jpeg">
+  <section class="newsletter data-parallax= scroll" data-image-src="./img/newsletter-bg.jpeg">
     <div class=" newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span></h2>
@@ -467,7 +482,7 @@
         </div>
         <!-- /.footer__list -->
         <div class="footer__contact-details">
-          <h3 class="footer__title">Contact Details </h3>
+          <h3 class="footer__title footer__title--contact">Contact Details </h3>
           <p class="footer__text">
             Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
@@ -496,7 +511,7 @@
         <!-- /. footer__contact-details-->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--message">Send us a message</h3>
-          <form action="" class="footer__form">
+          <form action="#" class="footer__form">
             <input type="text" class="footer__input" placeholder="Your Full Name*">
             <input type="text" class="footer__input" placeholder="Phone Number*">
             <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
@@ -512,9 +527,9 @@
       <!-- footer-wrapper -->
       <div class="footer__bottom">
         <div class="footer__policy">
-          <a href="#" class="footer__policy--link">Disclaimer</a>
-          <a href="#" class="footer__policy--link">Conditions of use </a>
-          <a href="#" class="footer__policy--link">Cancellation policy</a>
+          <a href="#" class="footer__policy footer__policy--link">Disclaimer</a>
+          <a href="#" class="footer__policy footer__policy--link">Conditions of use </a>
+          <a href="#" class="footer__policy footer__policy--link">Cancellation policy</a>
         </div>
         <div class="footer__icons">
           <img src="img/footer-icons.png" alt="Icon: footer-icons">
@@ -526,7 +541,7 @@
   </footer>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="js/parallax.min.js"></script>
+  <!-- <script src="js/parallax.min.js"></script> -->
 
   <script src=" js/main.js"></script>
 

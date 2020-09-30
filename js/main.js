@@ -29,9 +29,16 @@ var reviewSlider = new Swiper('.reviews-slider', {
   },
 });
 
-$('.newsletter').parallax({
-  imageSrc: './img/newsletter-bg.jpeg',
-  speed: 0.2
+// $('.newsletter').parallax({
+//   imageSrc: './img/newsletter-bg.jpeg',
+//   speed: 0.2
 
+
+// });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log('клик по кнопке')
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 
 });
