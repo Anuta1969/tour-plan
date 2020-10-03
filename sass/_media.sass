@@ -36,6 +36,7 @@
         line-height: 15px
   .search
     &__input
+      border-radius: 6px
       width: 340px
       padding-left: 23px
   .hotel
@@ -77,8 +78,8 @@
     padding-top: 73px
     &__title
       &--inline
-        margin-left: 40px
-        margin-top: 10px
+        // margin-left: 40px
+        // margin-top: 10px
     &-wrapper
       grid-template-columns: repeat(10, 1fr)
       grid-row-gap: 48px
@@ -89,10 +90,12 @@
       grid-row: 1 / 1
       grid-column: span 2
     &__social-network
-      grid-row: 1 / 1
+      grid-row: 1 / 2
       grid-column: span 6
       align-self: center
-      justify-self: flex-start
+      justify-self: center
+      margin-top: 10px
+
     &__categories
       grid-row: 2 / 3
       grid-column: span 3
@@ -116,14 +119,15 @@
       padding-left: 20px
     &__line
       width: 100%
-    &__icons
-      margin-left: 267px
+    &__bottom
+      justify-content: flex-start
+
 @media (max-width: 767px)
   .container
     max-width: 570px
     width: 92%
   body
-    padding-top: 70px
+    padding-top: 68px
   .logo
     width: 99px
     font-size: 13px
@@ -136,27 +140,36 @@
         top: 0
         right: 0
         z-index: 99
-
     &__search, &__user
       &--mobile
         &--hidden
           display: none
         &--visible
           display: flex
+
+    &__search
+      &--mobile
+        &--visible
+          // max-width: 245px
+          margin: 0 auto
+          margin-bottom: 15px
+          justify-content: center
+
     &__user
       flex-direction: column
       justify-content: center
     &-bottom
       display: none
       position: fixed
-      top: 69px
+      top: 68px
       left: 0
       right: 0
       bottom: 0
-      padding-top: 30px
+      padding-top: 12px
       &--visible
-        display: block
+        display: flex
         text-align: center
+
     &-top
       padding-top: 28px
       padding-bottom: 28px
@@ -165,6 +178,7 @@
 
       &__item
         margin-bottom: 20px
+        line-height: 15px
         &--mobile
           &--visible
             display: block
@@ -186,6 +200,7 @@
         height: 1px
         background-color: $text-color
   .user
+
     &__name
       &--light
         color: $light
@@ -290,15 +305,21 @@
   .footer
     &__input
       flex-basis: 100%
-    &__icons
-      margin-left: -2px
+    // &__icons
+    //   margin-left: -2px
     &__line
       flex-wrap: wrap
     &__bottom
-      width: 277px
+
       flex-wrap: wrap
       justify-content: flex-start
+
+  .modal
+    &__dialog
+      width: 94%
+      font-size: 14px
 @media (max-width: 576px )
+
   .logo
     width: 99px
   .hotel
@@ -343,11 +364,10 @@
       display: flex
       flex-wrap: wrap
       width: 195px
-
+      justify-self: flex-start
     &__legal
       grid-row: 3
       grid-column: 1
-
       justify-self: self-start
     &__additional
       grid-row: 4
@@ -368,7 +388,7 @@
       margin-top: 20px
     &__title
       &--inline
-        margin-left: 7px
+
         margin-top: 10px
         margin-right: 0
       &--message
@@ -385,3 +405,14 @@
       width: 300px
     &__policy
       margin-bottom: 5px
+  .modal
+    &__form
+      width: 100%
+    &__dialog
+      width: 100%
+      padding: 20px 45px
+      font-size: 12px
+    &__input
+      border-radius: 4px
+
+      height: 50px
