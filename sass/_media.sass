@@ -9,14 +9,13 @@
       width: 100%
   .hotel
     &-slider
-
   .card
     width: 230px
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
-
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -37,8 +36,8 @@
   .search
     &__input
       border-radius: 6px
-      width: 340px
-      padding-left: 23px
+      width: 325px
+      padding-left: 11px
   .hotel
     padding-bottom: 60px
     &-grid
@@ -65,7 +64,7 @@
       &__item
         max-width: 580px
   .activities
-    padding-top: 0px
+    padding-top: 30px
     padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
@@ -77,50 +76,64 @@
   .footer
     padding-top: 73px
     &__title
+      line-height: 18px
       &--inline
         // margin-left: 40px
         // margin-top: 10px
+      &--contact
+        margin-bottom: 30px
     &-wrapper
-      grid-template-columns: repeat(10, 1fr)
+      grid-template-columns: repeat(20, 1fr)
       grid-row-gap: 48px
       margin-bottom: 57px
+      grid-column-gap: 5px
     &__logo
-      width: 114px
-      height: 114px
+      width: 109px
+      height: 109px
+    &__link
       grid-row: 1 / 1
       grid-column: span 2
     &__social-network
-      grid-row: 1 / 2
-      grid-column: span 6
+      grid-row: 1/ 2
+      grid-column: 7/17
       align-self: center
-      justify-self: center
+      justify-self: start
       margin-top: 10px
-
+      margin-left: -20px
     &__categories
       grid-row: 2 / 3
-      grid-column: span 3
+      grid-column: 1/6
     &__additional
       grid-row: 2 / 3
-      grid-column: 4 / 8
-
+      grid-column: 6/ 14
+      justify-self: end
     &__legal
-      grid-column: span 3
-
+      grid-row: 2 / 3
+      grid-column: 14/20
+      margin-left: 20px
+      margin-right: -25px
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 8
+        grid-column: span 16
       &-form
         grid-row: 4
-        grid-column: span 8
+        grid-column: span 16
     &__input
-      flex-basis: 48%
-      padding: 0
-      padding-left: 20px
+      &-group
+        flex-basis: 48%
+        padding: 0
+        // padding-left: 20px
     &__line
       width: 100%
     &__bottom
       justify-content: flex-start
+  .modal
+    &__line
+      flex-direction: column
+      align-items: flex-start
+    &__button
+      margin-bottom: 10px
 
 @media (max-width: 767px)
   .container
@@ -146,7 +159,6 @@
           display: none
         &--visible
           display: flex
-
     &__search
       &--mobile
         &--visible
@@ -154,7 +166,7 @@
           margin: 0 auto
           margin-bottom: 15px
           justify-content: center
-
+          width: 77%
     &__user
       flex-direction: column
       justify-content: center
@@ -169,20 +181,20 @@
       &--visible
         display: flex
         text-align: center
-
     &-top
       padding-top: 28px
       padding-bottom: 28px
     &-menu
       flex-direction: column
-
+      // &--visible
+      //   height: 250px
+      //   overflow: auto
       &__item
         margin-bottom: 20px
         line-height: 15px
         &--mobile
           &--visible
             display: block
-
   .menu
     &-button
       display: flex
@@ -200,13 +212,11 @@
         height: 1px
         background-color: $text-color
   .user
-
     &__name
       &--light
         color: $light
         margin-top: 10px
         margin-left: 0
-
   .stars
     flex-basis: auto
   .hotel
@@ -258,7 +268,6 @@
         font-weight: 600
         font-size: 30px
         line-height: 38px
-
   .reviews
     padding-bottom: 0px
     margin-bottom: 20px
@@ -304,13 +313,13 @@
       margin-bottom: 36px
   .footer
     &__input
-      flex-basis: 100%
-    // &__icons
-    //   margin-left: -2px
+      &-group
+        flex-basis: 100%
+    &__icons
+      margin-left: 0px
     &__line
       flex-wrap: wrap
     &__bottom
-
       flex-wrap: wrap
       justify-content: flex-start
 
@@ -318,6 +327,16 @@
     &__dialog
       width: 94%
       font-size: 14px
+@media (max-width: 767px) and (orientation: landscape)
+  .navbar
+    &-menu
+      &--visible
+        max-height: 100%
+        overflow: auto
+        flex-direction: column
+  .container
+    height: 100%
+
 @media (max-width: 576px )
 
   .logo
@@ -365,13 +384,19 @@
       flex-wrap: wrap
       width: 195px
       justify-self: flex-start
+      margin-left: 0
     &__legal
       grid-row: 3
       grid-column: 1
-      justify-self: self-start
+      // justify-self: self-start
+      justify-self: inherit
+      margin-left: 0
     &__additional
       grid-row: 4
       grid-column: 1
+      margin-left: 0
+      margin-right: 0
+      justify-self: inherit
     &__categories
       grid-row: 5
       grid-column: 1
@@ -393,11 +418,13 @@
         margin-right: 0
       &--message
         margin-bottom: 15px
+      &--contact
+        margin-bottom: 40px
     &__message
       margin-bottom: 12px
     &__info
       margin-left: 10px
-      margin-bottom: 10px
+      margin-bottom: 15px
     &__line
       flex-direction: column-reverse
       align-items: start
@@ -414,5 +441,4 @@
       font-size: 12px
     &__input
       border-radius: 4px
-
       height: 50px
